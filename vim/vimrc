@@ -1,0 +1,62 @@
+" Vundle BEGIN
+set nocompatible
+filetype off
+
+" Set runtime path to include Vundle and begin
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Allow Vundle to manage itself
+Plugin 'Vundlevim/Vundle.vim'
+
+" Vundle plugins go here
+Plugin 'itchyny/lightline.vim' " Pretty status line
+Plugin 'elzr/vim-json' " Prettification of JSON files
+Plugin 'scrooloose/nerdtree' " File tree interface
+Plugin 'mhinz/vim-signify' " Adds a sign for each line modified/added since last commit to VCS
+Plugin 'dkarter/bullets.vim' " Allows easy bullet lists in .txt files
+
+"Plugin 'scrooloose/syntastic'
+"Plugin 'tomtom/tcomment_vim'
+"Plugin 'easymotion/vim-easymotion'
+"Plugin 'airblade/vim-gitgutter'
+
+call vundle#end()
+filetype plugin indent on
+" Vundle END
+
+" Make everything pretty
+colorscheme dante
+syntax on
+
+" Make searches show results as you type
+set incsearch
+
+" Make backspace smarter
+set backspace=indent,eol,start
+
+" Save files with utf-8
+set fileencoding=utf-8
+
+" Display files with utf-8
+set encoding=utf-8
+
+"tabs are 4 spaces long, and the tab key produces 4 spaces
+set tabstop=4
+set softtabstop=4
+set expandtab
+set shiftwidth=4
+
+" Turn on hybrid line numbers
+set number relativenumber
+
+"Show statusline always
+set laststatus=2
+
+" Bind C-t to NerdTree
+nnoremap <C-n> :NERDTree<CR>
+
+"Colorscheme for lightline plugin
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
