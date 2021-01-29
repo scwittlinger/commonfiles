@@ -15,6 +15,7 @@ Plugin 'elzr/vim-json' " Prettification of JSON files
 Plugin 'scrooloose/nerdtree' " File tree interface
 Plugin 'mhinz/vim-signify' " Adds a sign for each line modified/added since last commit to VCS
 Plugin 'dkarter/bullets.vim' " Allows easy bullet lists in .txt files
+Plugin 'fatih/vim-go' " Everything but the kitchen sink for Go development
 
 "Plugin 'scrooloose/syntastic'
 "Plugin 'tomtom/tcomment_vim'
@@ -26,7 +27,7 @@ filetype plugin indent on
 " Vundle END
 
 " Make everything pretty
-colorscheme dante
+colorscheme molokai
 syntax on
 
 " Make searches show results as you type
@@ -60,3 +61,13 @@ nnoremap <C-n> :NERDTree<CR>
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
+
+" vim-go settings
+let g:go_highlight_fields = 1         " Highlight struct fields
+let g:go_highlight_functions = 1      " Highlight function declarations
+let g:go_highlight_function_calls = 1 " Highlight function calls
+let g:go_highlight_extra_types = 1
+let g:go_highlight_operators = 1      " Highlight operators
+
+"let g:go_fmt_autosave = 1          " Run formatter on save
+"let g:go_fmt_comment = 'goimports' " Which formatting command to run
