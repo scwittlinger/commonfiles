@@ -54,7 +54,7 @@ set number relativenumber
 "Show statusline always
 set laststatus=2
 
-" Bind C-t to NerdTree
+" Bind C-n to NerdTree
 nnoremap <C-n> :NERDTree<CR>
 
 "Colorscheme for lightline plugin
