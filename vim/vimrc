@@ -30,6 +30,9 @@ filetype plugin indent on
 colorscheme molokai
 syntax on
 
+" No swap files, I hate them
+set noswapfile
+
 " Make searches show results as you type
 set incsearch
 
